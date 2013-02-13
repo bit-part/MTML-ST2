@@ -1,4 +1,3 @@
-# 2013-02-13 17:48:21
 import sublime, sublime_plugin
 import re
 
