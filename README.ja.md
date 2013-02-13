@@ -10,12 +10,9 @@ Sublime Text 2 の Packages ディレクトに git clone するか、zip ファ�
 
 ![表示サンプル](http://farm9.staticflickr.com/8517/8469042485_e847e4c3eb_o.png)
 
-* [B]
-** Blockタグ
-* [F]
-** Functionタグ
-* [C]
-** Conditionalタグ
+* [B]：Blockタグ
+* [F]：Functionタグ
+* [C]：Conditionalタグ
 
 ## 謝辞
 
