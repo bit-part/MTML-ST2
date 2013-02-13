@@ -14,6 +14,12 @@ Sublime Text 2 の Packages ディレクトに git clone するか、zip ファ�
 * [F]：Functionタグ
 * [C]：Conditionalタグ
 
+![モディファイア表示サンプル](http://bit-part.github.com/data/img_mtml-st2_modifier.png)
+
+Ctrl + Spaceでグローバルモディファイアを補完します
+
+* [M]：モディファイア
+
 ## 謝辞
 
 このパッケージの作り方は、 [dreamseeker/ST2MovableType · GitHub](https://github.com/dreamseeker/ST2MovableType) を参考に作りました。[Toru Kokubun](https://github.com/dreamseeker) さんに深く感謝いたします。

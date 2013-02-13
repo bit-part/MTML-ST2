@@ -14,6 +14,12 @@ Please clone into your Sublime Text 2 package directory.
 * [F]：Function Tag
 * [C]：Conditional Tag
 
+![Modifier Example](http://bit-part.github.com/data/img_mtml-st2_modifier.png)
+
+Ctrl + Space
+
+* [M]：Modifier
+
 ---
 
 _Movable Type is a registered trademark of Six Apart, the Ltd.._
