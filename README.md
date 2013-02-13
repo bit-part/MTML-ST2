@@ -8,11 +8,17 @@ Please clone into your Sublime Text 2 package directory.
 
 ## Example
 
-![Example](http://farm9.staticflickr.com/8517/8469042485_e847e4c3eb_o.png)
+![Example](http://bit-part.github.com/data/img_mtml-st2.png)
 
 * [B]：Block Tag
 * [F]：Function Tag
 * [C]：Conditional Tag
+
+![Modifier Example](http://bit-part.github.com/data/img_mtml-st2_modifier.png)
+
+Ctrl + Space
+
+* [M]：Modifier
 
 ---
 

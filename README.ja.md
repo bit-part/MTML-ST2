@@ -8,11 +8,17 @@ Sublime Text 2 の Packages ディレクトに git clone するか、zip ファ�
 
 ## 表示サンプル
 
-![表示サンプル](http://farm9.staticflickr.com/8517/8469042485_e847e4c3eb_o.png)
+![表示サンプル](http://bit-part.github.com/data/img_mtml-st2.png)
 
 * [B]：Blockタグ
 * [F]：Functionタグ
 * [C]：Conditionalタグ
+
+![モディファイア表示サンプル](http://bit-part.github.com/data/img_mtml-st2_modifier.png)
+
+Ctrl + Spaceでグローバルモディファイアを補完します
+
+* [M]：モディファイア
 
 ## 謝辞
 
