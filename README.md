@@ -6,6 +6,11 @@ Sublime Text 2 MTML Package is autocompletions of Movable Type for Sublime Text 
 
 Please clone into your Sublime Text 2 package directory.
 
+## Usage
+
+You can use this suggestion, when you input "<" in html or php file.
+If you set extension as ".mtml" or ".tmpl" , please change Syntax as html.
+
 ## Example
 
 ![Example](http://bit-part.github.com/data/img_mtml-st2.png)
