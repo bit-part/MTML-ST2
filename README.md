@@ -1,10 +1,31 @@
-# Sublime Text 2 MTML Package
+# About MTML-ST2
 
-Sublime Text 2 MTML Package is autocompletions of Movable Type for Sublime Text 2.
+MTML-ST2 is Sublime Text 2 MTML Package. This is autocompletions of Movable Type Template Tags for Sublime Text 2.
 
 ## Instalation
 
+### With Package Control: Add Repository
+
+```
+Package Control: Add Repository
+```
+
+Input URL ‘https://github.com/bit-part/MTML-ST2’
+
+```
+Package Control: Install Package
+```
+
+Select ‘MTML-ST2’
+
+### With Git
+
 Please clone into your Sublime Text 2 package directory.
+
+```
+cd /path/to/your/Sublime Text 2/Packages
+git clone https://github.com/bit-part/MTML-ST2
+```
 
 ## Usage
 
@@ -27,4 +48,4 @@ Ctrl + Space
 
 ---
 
-_Movable Type is a registered trademark of Six Apart, the Ltd.._
+_Movable Type is a registered trademark of Six Apart, the Ltd._
