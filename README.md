@@ -1,6 +1,7 @@
 # About MTML Completions 
 
-MTML Completions is Sublime Text 2 MTML Package. This is autocompletions of Movable Type Template Tags for Sublime Text 2.
+MTML Completions is Sublime Text 2 MTML Package. This is autocompletions of Movable Type Template Tags for Sublime Text 2.  
+This package includes some tags of [DynamicMTML](https://github.com/movabletype/DynamicMTML) plugin.
 
 ## Instalation
 
@@ -21,8 +22,8 @@ git clone https://github.com/bit-part/MTML-ST2
 
 ## Usage
 
-You can use this suggestion, when you input "<" in html or php file.
-If you set extension as ".mtml" or ".tmpl" , please change Syntax as html.
+You can use this completion, when you input "<" in html or php file.
+When you set extension as ".mtml" or ".tmpl" , please change Syntax as html.
 
 ## Example
 

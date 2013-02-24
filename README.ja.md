@@ -1,6 +1,7 @@
 # MTML Completions について
 
-MTML Completions は Sublime Text 2 で Movable Type のテンプレートタグ（MTML）の入力補完を提供するパッケージです。
+MTML Completions は Sublime Text 2 で Movable Type のテンプレートタグ（MTML）の入力補完を提供するパッケージです。  
+[DynamicMTML](https://github.com/movabletype/DynamicMTML) のタグも含まれています。
 
 ## インストール
 
