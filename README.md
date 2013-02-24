@@ -1,22 +1,14 @@
 # About MTML Completions 
 
-MTML Completions  is Sublime Text 2 MTML Package. This is autocompletions of Movable Type Template Tags for Sublime Text 2.
+MTML Completions is Sublime Text 2 MTML Package. This is autocompletions of Movable Type Template Tags for Sublime Text 2.
 
 ## Instalation
 
-### With Package Control: Add Repository
+### With Package Control
 
-```
-Package Control: Add Repository
-```
-
-Input URL ‘https://github.com/bit-part/MTML-ST2’
-
-```
-Package Control: Install Package
-```
-
-Select ‘MTML Completions ’
+* Bring up the Command Palette (Command+Shift+p on OS X, Control+Shift+p on Linux/Windows).
+* Select "Package Control: Install Package" .
+* Select "MTML Completions" when the list appears.
 
 ### With Git
 

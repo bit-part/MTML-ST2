@@ -8,9 +8,7 @@ MTML Completions は Sublime Text 2 で Movable Type のテンプレートタグ
 
 _※あらかじめ Package Control をインストールしておく必要があります。_
 
-Package Control を起動し「Add Repository」を選択し、リポジトリのURL「 https://github.com/bit-part/MTML-ST2 」を入力します。
-
-再度 Package Controlを起動し「Install Package」を選択し、「MTML Completions」を選択します。
+Package Controlを起動し「Install Package」を選択し、「MTML Completions」を選択します。
 
 ### Git を使ったインストール
 
