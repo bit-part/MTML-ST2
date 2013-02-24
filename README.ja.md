@@ -1,6 +1,6 @@
-# MTML-ST2 について
+# MTML Completions について
 
-MTML-ST2 は Sublime Text 2 で Movable Type のテンプレートタグ（MTML）の入力補完を提供するパッケージです。
+MTML Completions は Sublime Text 2 で Movable Type のテンプレートタグ（MTML）の入力補完を提供するパッケージです。
 
 ## インストール
 
@@ -10,7 +10,7 @@ _※あらかじめ Package Control をインストールしておく必要が�
 
 Package Control を起動し「Add Repository」を選択し、リポジトリのURL「 https://github.com/bit-part/MTML-ST2 」を入力します。
 
-再度 Package Controlを起動し「Install Package」を選択し、「MTML-ST2」を選択します。
+再度 Package Controlを起動し「Install Package」を選択し、「MTML Completions」を選択します。
 
 ### Git を使ったインストール
 
