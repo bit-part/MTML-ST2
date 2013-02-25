@@ -1,6 +1,6 @@
 # About MTML Completions 
 
-MTML Completion is an add-on program package for Sublime Text 2. This complements Movable Type Template Tags when you useperate Sublime Text 2.  
+MTML Completion is an add-on program package for Sublime Text 2. This complements Movable Type Template Tags when you use Sublime Text 2.  
 This package includes some tags of [DynamicMTML](https://github.com/movabletype/DynamicMTML)  plugin.
 
 ## Installation
