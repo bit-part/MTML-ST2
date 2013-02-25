@@ -182,10 +182,13 @@ class MTTagCompletions(sublime_plugin.EventListener):
         ch = view.substr(sublime.Region(pt, pt + 1))
         if ch != '<':
             return []
-        dollar_type = view.settings().get('mtml_dollar_type')
-        if dollar_type:
+        function_tag_type = view.settings().get('mtml_function_tag_type')
+        if function_tag_type == 'dollar':
             tag_open = '\$'
             tag_close = '\$>'
+        elif function_tag_type == 'none':
+            tag_open = ''
+            tag_close = '>'
         else:
             tag_open = ''
             tag_close = ' />'
@@ -775,8 +778,8 @@ class MTTagCompletions(sublime_plugin.EventListener):
             ("mt:Trans\tDynamicMTML[F]", tag_open + "mt:Trans${1}" + tag_close),
             ("mt:TypeKeyToken\tMT[F]", tag_open + "mt:TypeKeyToken${1}" + tag_close),
             ("mt:UserAgent\tDynamicMTML[F]", tag_open + "mt:UserAgent${1}" + tag_close),
-            ("mt:Var\tMT[F]", tag_open + "mt:Var${1}" + tag_close),
             ("mt:Var\tMT[F]", tag_open + "mt:Var name=\"${1:name}\"" + tag_close),
+            ("mt:Var\tMT[F]", tag_open + "mt:Var${1}" + tag_close),
             ("mt:Version\tMT[F]", tag_open + "mt:Version${1}" + tag_close),
             ("mt:VideoCustomFieldDescription\tMT[F]", tag_open + "mt:VideoCustomFieldDescription${1}" + tag_close),
             ("mt:VideoCustomFieldName\tMT[F]", tag_open + "mt:VideoCustomFieldName${1}" + tag_close),
