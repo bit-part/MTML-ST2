@@ -1,27 +1,22 @@
 import sublime, sublime_plugin
 import re
-
 def match(rex, str):
     m = rex.match(str)
     if m:
         return m.group(0)
     else:
         return None
-
 class ModifierCompletions(sublime_plugin.EventListener):
     def on_query_completions(self, view, prefix, locations):
         # Only trigger within HTML
         # if not view.match_selector(locations[0],
         #         "text.html - source"):
         #     return []
-
         pt = locations[0] - len(prefix) - 1
         ch = view.substr(sublime.Region(pt, pt + 1))
         if ch != ' ':
             return []
-
         return ([
-
             ("action=\"url\"\tMT[M]", "action=\"${1:url}\""),
             ("append=\"1\"\tMT[M]", "append=\"${1:1}\""),
             ("author=\"author_foo\"\tMT[M]", "author=\"${1:author_foo}\""),
@@ -176,25 +171,19 @@ class ModifierCompletions(sublime_plugin.EventListener):
             ("__first__\tMT[M]", "__first__"),
             ("__last__\tMT[M]", "__last__"),
             ("__odd__\tMT[M]", "__odd__")
-
-
         ], sublime.INHIBIT_WORD_COMPLETIONS | sublime.INHIBIT_EXPLICIT_COMPLETIONS)
-
 class MTTagCompletions(sublime_plugin.EventListener):
     def on_query_completions(self, view, prefix, locations):
         # Only trigger within HTML
         # if not view.match_selector(locations[0],
         #         "text.html - source"):
         #     return []
-
         pt = locations[0] - len(prefix) - 1
         ch = view.substr(sublime.Region(pt, pt + 1))
         if ch != '<':
             return []
-
         return ([
             # Block Tag
-
             ("mt:Actions\tMT[B]", "mt:Actions${1}>${2:Contents}</mt:Actions>"),
             ("mt:ActionsComment\tMT[B]", "mt:ActionsComment${1}>${2:Contents}</mt:ActionsComment>"),
             ("mt:ActionsEntry\tMT[B]", "mt:ActionsEntry${1}>${2:Contents}</mt:ActionsEntry>"),
@@ -364,10 +353,7 @@ class MTTagCompletions(sublime_plugin.EventListener):
             ("mtapp:SettingGroup\tMT[B]", "mtapp:SettingGroup${1}>${2:Contents}</mtapp:SettingGroup>"),
             ("mtapp:StatusMsg\tMT[B]", "mtapp:StatusMsg${1}>${2:Contents}</mtapp:StatusMsg>"),
             ("mtapp:Widget\tMT[B]", "mtapp:Widget${1}>${2:Contents}</mtapp:Widget>"),
-
-
             # Conditional Tag
-
             ("mt:AssetIfTagged\tMT[C]", "mt:AssetIfTagged${1}>${2:Contents}</mt:AssetIfTagged>"),
             ("mt:AuthorIfFollowed\tMT[C]", "mt:AuthorIfFollowed${1}>${2:Contents}</mt:AuthorIfFollowed>"),
             ("mt:AuthorIfFollowing\tMT[C]", "mt:AuthorIfFollowing${1}>${2:Contents}</mt:AuthorIfFollowing>"),
@@ -439,10 +425,7 @@ class MTTagCompletions(sublime_plugin.EventListener):
             ("mt:PageIfTagged\tMT[C]", "mt:PageIfTagged${1}>${2:Contents}</mt:PageIfTagged>"),
             ("mt:WebsiteIfCCLicense\tMT[C]", "mt:WebsiteIfCCLicense${1}>${2:Contents}</mt:WebsiteIfCCLicense>"),
             ("mt:WebsiteIfCommentsOpen\tMT[C]", "mt:WebsiteIfCommentsOpen${1}>${2:Contents}</mt:WebsiteIfCommentsOpen>"),
-
-
             # Function Tag
-
             ("mt\tMT[F]", "mt:${1:TagName} />"),
             ("mt:AdminCGIPath\tMT[F]", "mt:AdminCGIPath${1} />"),
             ("mt:AdminScript\tMT[F]", "mt:AdminScript${1} />"),
@@ -818,6 +801,4 @@ class MTTagCompletions(sublime_plugin.EventListener):
             ("mtapp:ListFilters\tMT[F]", "mtapp:ListFilters${1} />"),
             ("mtapp:PageActions\tMT[F]", "mtapp:PageActions${1} />"),
             ("mtml\tDynamicMTML[F]", "mtml tag='${1:/}mt:${2:TagName}'${3: params=''} />\n")
-
-
         ], sublime.INHIBIT_WORD_COMPLETIONS | sublime.INHIBIT_EXPLICIT_COMPLETIONS)
