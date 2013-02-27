@@ -20,6 +20,22 @@ cd /path/to/your/Sublime Text 2/Packages
 git clone https://github.com/bit-part/MTML-ST2
 ```
 
+## Preference
+
+You can change the format of Template Tags.
+
+### mtml_prefix
+
+	no setting => <mt:EntryTitle />
+	"mtml_prefix": "MT:" => <MT:EntryTitle />
+	"mtml_prefix": "MT"  => <MTEntryTitle />
+
+### mtml_function_tag_type
+
+	no setting => <mt:EntryTitle />
+	"mtml_function_tag_type": "dollar" => <$mt:EntryTitle$>
+	"mtml_function_tag_type": "none" => <mt:EntryTitle>
+
 ## Usage
 
 You can use this feature when you input "<" in html or php file. When you set extension as ".mtml" or ".tmpl" , please change Syntax as html.
