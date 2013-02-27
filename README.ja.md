@@ -26,6 +26,26 @@ git clone https://github.com/bit-part/MTML-ST2
 
 zip ファイルをダウンロードし、Sublime Text 2 の Packages ディレクトリに展開します。
 
+## 設定
+
+Preferences > Settings - User（command + ,）に以下の項目を設定するとこでテンプレートタグの書式等を変更できます。
+
+### mtml_prefix
+
+ここで設定した値がテンプレートタグの接頭辞になります。mtml_prefix を設定しない場合は mt: になります。
+
+	設定無し => <mt:EntryTitle />
+	"mtml_prefix": "MT:" => <MT:EntryTitle />
+	"mtml_prefix": "MT"  => <MTEntryTitle />
+
+### mtml_function_tag_type
+
+ファンクションタグの書式を変更できます。設定できる値は dollar または none です。
+
+	設定無し => <mt:EntryTitle />
+	"mtml_function_tag_type": "dollar" => <$mt:EntryTitle$>
+	"mtml_function_tag_type": "none" => <mt:EntryTitle>
+
 ## 動作方法
 
 HTMLとPHPの場合、「<」を入力した時点で自動で補完されます。  
